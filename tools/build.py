@@ -507,9 +507,11 @@ def build_contact():
     <div class="form-card reveal">
       <h2>Send an enquiry</h2>
       <p>Fields marked optional can be skipped. Everything else helps us reply with something useful.</p>
-      <!-- To receive submissions without opening the visitor's email app, set data-endpoint
-           to a form service URL (e.g. https://formspree.io/f/XXXX). Empty = email fallback. -->
-      <form id="contactForm" data-endpoint="" data-mailto="{SALES}" novalidate>
+      <!-- Submissions go to Netlify Forms (form name "contact"); set email notifications in the
+           Netlify dashboard. Elsewhere, data-endpoint can be any form service URL; empty = email fallback. -->
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="_gotcha"
+            data-endpoint="/" data-mailto="{SALES}" novalidate>
+        <input type="hidden" name="form-name" value="contact">
         <div class="fields">
           <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required><span class="err">Please enter your name.</span></div>
           <div class="field"><label for="f-org">Organization <span class="opt">(optional)</span></label><input id="f-org" name="organization" autocomplete="organization"></div>

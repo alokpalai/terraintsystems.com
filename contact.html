@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
-  <link rel="stylesheet" href="css/site.min.css?v=7d72b003">
+  <link rel="stylesheet" href="css/site.min.css?v=ba020739">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://terraintsystems.com/#org","name":"TerraINT Systems Pvt. Ltd.","alternateName":"TerraINT","url":"https://terraintsystems.com/","logo":"https://terraintsystems.com/assets/logo.png","slogan":"Transforming Data into Decisions","foundingDate":"2025","email":"info@terraintsystems.com","address":{"@type":"PostalAddress","streetAddress":"Janakpuri Road, Patel Nagar","addressLocality":"New Delhi","postalCode":"110064","addressCountry":"IN"},"contactPoint":[{"@type":"ContactPoint","contactType":"sales","email":"sales@terraintsystems.com"}],"sameAs":["https://www.linkedin.com/company/terraint-systems-pvt-ltd/"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://terraintsystems.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://terraintsystems.com/contact.html"}]}</script>
 </head>
@@ -71,9 +71,11 @@
     <div class="form-card reveal">
       <h2>Send an enquiry</h2>
       <p>Fields marked optional can be skipped. Everything else helps us reply with something useful.</p>
-      <!-- To receive submissions without opening the visitor's email app, set data-endpoint
-           to a form service URL (e.g. https://formspree.io/f/XXXX). Empty = email fallback. -->
-      <form id="contactForm" data-endpoint="" data-mailto="sales@terraintsystems.com" novalidate>
+      <!-- Submissions go to Netlify Forms (form name "contact"); set email notifications in the
+           Netlify dashboard. Elsewhere, data-endpoint can be any form service URL; empty = email fallback. -->
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="_gotcha"
+            data-endpoint="/" data-mailto="sales@terraintsystems.com" novalidate>
+        <input type="hidden" name="form-name" value="contact">
         <div class="fields">
           <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required><span class="err">Please enter your name.</span></div>
           <div class="field"><label for="f-org">Organization <span class="opt">(optional)</span></label><input id="f-org" name="organization" autocomplete="organization"></div>
@@ -153,6 +155,6 @@
     </div>
   </div>
 </footer>
-<script src="js/site.js?v=7d72b003"></script>
+<script src="js/site.js?v=ba020739"></script>
 </body>
 </html>

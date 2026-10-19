@@ -569,7 +569,12 @@
 
       btn.disabled = true;
       try {
-        const res = await fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } });
+        // URL-encoded body: what Netlify Forms expects for AJAX posts (form services accept it too)
+        const res = await fetch(endpoint, {
+          method: "POST",
+          body: new URLSearchParams(data).toString(),
+          headers: { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json" },
+        });
         if (!res.ok) throw new Error(res.status);
         form.reset();
         show("ok", "Thank you — your enquiry has been sent. We'll be in touch soon.");
