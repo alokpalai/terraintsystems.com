@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TerraINT Systems — Geospatial Intelligence, IoT &amp; Environmental Analytics</title>
+  <meta name="description" content="TerraINT Systems Pvt. Ltd. turns raw geospatial and environmental data into decisions — IoT sensing, satellite products, GIS licensing, topographic survey and flood risk assessment.">
+  <meta name="theme-color" content="#14393a">
+  <link rel="canonical" href="https://terraintsystems.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TerraINT Systems">
+  <meta property="og:title" content="TerraINT Systems — Geospatial Intelligence, IoT &amp; Environmental Analytics">
+  <meta property="og:description" content="TerraINT Systems Pvt. Ltd. turns raw geospatial and environmental data into decisions — IoT sensing, satellite products, GIS licensing, topographic survey and flood risk assessment.">
+  <meta property="og:url" content="https://terraintsystems.com/">
+  <meta property="og:image" content="https://terraintsystems.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="css/site.min.css?v=7d72b003">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://terraintsystems.com/#org","name":"TerraINT Systems Pvt. Ltd.","alternateName":"TerraINT","url":"https://terraintsystems.com/","logo":"https://terraintsystems.com/assets/logo.png","slogan":"Transforming Data into Decisions","foundingDate":"2025","email":"info@terraintsystems.com","address":{"@type":"PostalAddress","streetAddress":"Janakpuri Road, Patel Nagar","addressLocality":"New Delhi","postalCode":"110064","addressCountry":"IN"},"contactPoint":[{"@type":"ContactPoint","contactType":"sales","email":"sales@terraintsystems.com"}],"sameAs":["https://www.linkedin.com/company/terraint-systems-pvt-ltd/"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"TerraINT Systems","url":"https://terraintsystems.com/","publisher":{"@id":"https://terraintsystems.com/#org"}}</script>
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="TerraINT Systems home">
+      <img src="assets/logo-84.webp" alt="" width="42" height="42">
+      <span class="brand-text"><b>Terra<span>INT</span></b><small>SYSTEMS PVT. LTD.</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="about.html">About</a>
+      <div class="nav-drop">
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="dropMenu">Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="drop-menu" id="dropMenu">
+        <a href="services/iot-sensor-solutions.html"><span class="n">01</span><span><b>IoT Sensor-Based Solutions</b><small>Real-time environmental & asset monitoring</small></span></a>
+        <a href="services/satellite-products.html"><span class="n">02</span><span><b>Satellite-Based Products</b><small>Earth observation & remote sensing</small></span></a>
+        <a href="services/gis-software-licensing.html"><span class="n">03</span><span><b>GIS Software Licensing</b><small>Spatial analysis & visualization platforms</small></span></a>
+        <a href="services/topographic-survey-mapping.html"><span class="n">04</span><span><b>Topographic Survey & Mapping</b><small>High-accuracy field surveying</small></span></a>
+        <a href="services/flood-risk-assessment.html"><span class="n">05</span><span><b>Flood Risk Assessment</b><small>Scientific hazard modelling & resilience</small></span></a>
+        </div>
+      </div>
+      <a href="index.html#industries">Industries</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html" class="btn btn-primary">Let's talk</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" aria-labelledby="heroTitle">
+  <canvas id="terrain" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div>
+      <span class="hero-tag"><span class="pulse"></span>Geospatial · IoT · Environmental Analytics</span>
+      <h1 id="heroTitle">
+        <span class="line"><span>Transforming</span></span>
+        <span class="line"><span><span class="accent">Data</span> into</span></span>
+        <span class="line"><span>Decisions.</span></span>
+      </h1>
+      <p class="hero-sub">TerraINT Systems helps governments, industries and communities read the ground beneath them — from real-time sensors in the field to satellites in orbit — and act on it with confidence.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-primary">Explore our services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="contact.html" class="btn btn-ghost">Start a project</a>
+      </div>
+      <div class="hero-coords">
+        <span>28.64° N · 77.11° E</span>
+        <span>NEW DELHI, INDIA</span>
+        <span>EST. 2025</span>
+      </div>
+    </div>
+
+    <!-- Illustrative telemetry card: animated sample data, not live readings -->
+    <aside class="telemetry" aria-label="Illustrative sensor dashboard">
+      <div class="tele-head"><span>Station · RIV-07</span><i><span class="pulse"></span>LIVE FEED</i></div>
+      <div class="tele-main"><span id="teleLevel">2.41</span><small>m</small></div>
+      <div class="tele-label">River water level</div>
+      <svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="sparkGrad" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c08552" stop-opacity=".35"/><stop offset="1" stop-color="#c08552" stop-opacity="0"/></linearGradient></defs>
+        <path class="area" id="sparkArea"/>
+        <path class="line" id="sparkLine"/>
+      </svg>
+      <div class="tele-grid">
+        <div><b id="teleRain">12.4</b><span>Rainfall mm/h</span></div>
+        <div><b id="teleSoil">38%</b><span>Soil moisture</span></div>
+      </div>
+      <div class="tele-alert">⚠ Threshold watch: 3.00 m</div>
+      <p class="tele-note">// illustrative sample data</p>
+    </aside>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About">SCROLL</a>
+</section>
+
+<!-- ============================== TICKER ============================== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>IoT Sensing</span><span>Earth Observation</span><span>SAR &amp; Multispectral Imagery</span><span>GIS Licensing</span><span>Topographic Survey</span><span>LiDAR &amp; Drone Mapping</span><span>Flood Risk Modelling</span><span>Change Detection</span><span>Earthwork Volume Analysis</span><span>Mobile Mapping</span>
+    <span>IoT Sensing</span><span>Earth Observation</span><span>SAR &amp; Multispectral Imagery</span><span>GIS Licensing</span><span>Topographic Survey</span><span>LiDAR &amp; Drone Mapping</span><span>Flood Risk Modelling</span><span>Change Detection</span><span>Earthwork Volume Analysis</span><span>Mobile Mapping</span>
+  </div>
+</div>
+
+<!-- ============================== ABOUT ============================== -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">About the company</span>
+      <h2 class="h2">Bridging the gap between data and <em>impact.</em></h2>
+      <p class="lede">TerraINT Systems Pvt. Ltd. — short for <strong>Terrain Intelligence</strong> — empowers organizations with geospatial and environmental solutions designed to turn raw data into decisions that hold up in the field.</p>
+      <p class="lede">We bring sensors, satellites, software and surveyors together under one roof, so the answer to <em>“what is happening, and where?”</em> arrives as something you can act on.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar reveal" style="--d:.05s">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></div>
+        <div><h3>Multi-domain coverage</h3><p>IoT, satellite, GIS, survey and risk assessment — one partner for the full spatial picture.</p></div>
+      </article>
+      <article class="pillar reveal" style="--d:.15s">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 16.6 6.5 19.5l1-6.2L3 8.9 9 8z"/></svg></div>
+        <div><h3>Field-tested methods</h3><p>Built on established geospatial and hydrological practice, not guesswork.</p></div>
+      </article>
+      <article class="pillar reveal" style="--d:.25s">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h6v6"/></svg></div>
+        <div><h3>Decision-oriented output</h3><p>Every dataset is structured to lead to a usable decision — maps, alerts and reports teams can act on.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PIPELINE ============================== -->
+<section class="section dark" id="how">
+  <div class="wrap">
+    <div class="pipe-head reveal">
+      <div>
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2">From signal <em>to decision.</em></h2>
+      </div>
+      <p class="lede">Collecting more data isn't the goal. Converting continuous field observations into timely, location-aware insight is.</p>
+    </div>
+    <div class="pipeline reveal" id="pipeline">
+      <div class="pipe-progress" id="pipeProgress"></div>
+      <div class="step active" tabindex="0">
+        <div class="node"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 000 7M15.5 8.5a5 5 0 010 7M5.6 5.6a9 9 0 000 12.8M18.4 5.6a9 9 0 010 12.8"/></svg></div>
+        <div><span class="num">01</span><h3>Sense</h3><p>Sensors, satellites and survey crews capture the ground truth.</p></div>
+      </div>
+      <div class="step" tabindex="0">
+        <div class="node"><svg viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></svg></div>
+        <div><span class="num">02</span><h3>Transmit</h3><p>Field data streams securely to cloud platforms.</p></div>
+      </div>
+      <div class="step" tabindex="0">
+        <div class="node"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+        <div><span class="num">03</span><h3>Integrate</h3><p>Layers merge in GIS so every reading has a location.</p></div>
+      </div>
+      <div class="step" tabindex="0">
+        <div class="node"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <div><span class="num">04</span><h3>Analyse</h3><p>Models detect change, risk and patterns over time.</p></div>
+      </div>
+      <div class="step" tabindex="0">
+        <div class="node"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></div>
+        <div><span class="num">05</span><h3>Act</h3><p>Alerts, maps and reports drive timely decisions.</p></div>
+      </div>
+    </div>
+    <p class="pipe-note reveal">From data to intelligence. <em>From intelligence to action.</em></p>
+  </div>
+</section>
+
+<!-- ============================== SERVICES ============================== -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <span class="eyebrow">Core services</span>
+      <h2 class="h2">Five service lines. <em>One spatial picture.</em></h2>
+    </div>
+
+    <div class="svc-explorer reveal">
+      <div class="svc-tabs" role="tablist" aria-label="Services">
+        <button class="svc-tab" role="tab" aria-selected="true" aria-controls="svc-1" id="tab-1"><span class="n">01</span><span><b>IoT Sensor-Based Solutions</b><small>Real-time environmental &amp; asset monitoring</small></span></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-2" id="tab-2" tabindex="-1"><span class="n">02</span><span><b>Satellite-Based Products</b><small>Earth observation &amp; remote sensing</small></span></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-3" id="tab-3" tabindex="-1"><span class="n">03</span><span><b>GIS Software Licensing</b><small>Spatial analysis &amp; visualization platforms</small></span></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-4" id="tab-4" tabindex="-1"><span class="n">04</span><span><b>Topographic Survey &amp; Mapping</b><small>High-accuracy field surveying</small></span></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-5" id="tab-5" tabindex="-1"><span class="n">05</span><span><b>Flood Risk Assessment</b><small>Scientific hazard modelling &amp; resilience</small></span></button>
+      </div>
+
+      <div class="svc-panels">
+        <!-- 01 IoT -->
+        <div class="svc-panel active" role="tabpanel" id="svc-1" aria-labelledby="tab-1">
+          <div class="svc-visual"><span class="tag">SERVICE / 01</span>
+            <svg viewBox="0 0 460 220" aria-hidden="true">
+              <path class="s-line" d="M10 200h440"/>
+              <path class="s-line" d="M110 200V70M80 200l30-30 30 30"/>
+              <rect class="s-fill" x="96" y="110" width="28" height="36" rx="3"/>
+              <path class="s-line" d="M86 70h48"/><circle class="s-dot" cx="86" cy="64" r="6"/><circle class="s-dot" cx="134" cy="64" r="6"/>
+              <path class="s-cu s-arc" d="M150 50a40 40 0 010 56"/>
+              <path class="s-cu s-arc" d="M165 35a62 62 0 010 86"/>
+              <path class="s-cu s-arc" d="M180 20a84 84 0 010 116"/>
+              <path class="s-line s-dash" d="M200 78C250 78 250 40 300 40"/>
+              <g class="s-float">
+                <rect x="300" y="14" width="140" height="110" rx="10" fill="#14393a" stroke="#8fb8b2" stroke-width="1.2"/>
+                <path class="s-line" d="M314 32h40" opacity=".6"/>
+                <path class="s-cu" d="M314 100l18-14 16 8 18-26 16 10 18-30 20 12"/>
+                <circle cx="420" cy="30" r="4" fill="#c08552"/>
+              </g>
+            </svg>
+          </div>
+          <div class="svc-body">
+            <div><h3>IoT Sensor-Based Solutions</h3><p>Real-time monitoring and smart sensing systems for environmental, infrastructure and asset management — water level, flow, rainfall, groundwater, air and water quality.</p><a class="svc-more" href="services/iot-sensor-solutions.html">Explore this service <span>→</span></a></div>
+            <ul>
+              <li>Continuous field data collection without manual visits</li>
+              <li>Weather, water, soil and structural sensor options</li>
+              <li>Cloud-connected dashboards and alerting</li>
+              <li>Battery / solar-powered units for remote installations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 02 Satellite -->
+        <div class="svc-panel" role="tabpanel" id="svc-2" aria-labelledby="tab-2" hidden>
+          <div class="svc-visual"><span class="tag">SERVICE / 02</span>
+            <svg viewBox="0 0 460 220" aria-hidden="true">
+              <path class="s-fill" d="M-10 230C80 150 380 150 470 230z" opacity=".9"/>
+              <path class="s-line" d="M60 190c40-14 90-10 120 4M260 180c40-10 90-6 130 8" opacity=".6"/>
+              <ellipse class="s-line s-dash" cx="230" cy="120" rx="210" ry="70" opacity=".6"/>
+              <g>
+                <animateMotion dur="9s" repeatCount="indefinite" path="M20 120a210 70 0 1 0 420 0a210 70 0 1 0 -420 0"/>
+                <path d="M0 0l-40 90h80z" fill="#c08552" opacity=".12" transform="translate(0 6)"/>
+                <rect x="-8" y="-8" width="16" height="16" rx="2" fill="#c08552"/>
+                <rect x="-34" y="-5" width="22" height="10" fill="#2e6663" stroke="#8fb8b2"/>
+                <rect x="12" y="-5" width="22" height="10" fill="#2e6663" stroke="#8fb8b2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="svc-body">
+            <div><h3>Satellite-Based Products</h3><p>Earth observation and remote sensing for monitoring, analysis and decision support at scale — from optical and multispectral imagery to all-weather SAR and value-added indices like NDVI.</p><a class="svc-more" href="services/satellite-products.html">Explore this service <span>→</span></a></div>
+            <ul>
+              <li>Wide-area coverage where ground access is limited</li>
+              <li>Change detection over weeks, months or years</li>
+              <li>Feeds directly into GIS and analytics workflows</li>
+              <li>Multispectral and radar imagery options</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 03 GIS -->
+        <div class="svc-panel" role="tabpanel" id="svc-3" aria-labelledby="tab-3" hidden>
+          <div class="svc-visual"><span class="tag">SERVICE / 03</span>
+            <svg viewBox="0 0 460 220" aria-hidden="true">
+              <g class="s-layer"><path d="M230 150l150 40-150 40-150-40z" fill="#14393a" stroke="#8fb8b2" stroke-width="1.2" transform="translate(0 -30)"/></g>
+              <g class="s-layer"><path d="M230 100l150 40-150 40-150-40z" fill="#1f4b4c" stroke="#8fb8b2" stroke-width="1.2" transform="translate(0 -30)"/>
+                <path class="s-cu" d="M140 110c30 6 50 26 90 26s60-14 100-4" transform="translate(0 -30) scale(1 1)" opacity=".8"/></g>
+              <g class="s-layer"><path d="M230 50l150 40-150 40-150-40z" fill="#2e6663" stroke="#8fb8b2" stroke-width="1.2" fill-opacity=".85" transform="translate(0 -30)"/>
+                <circle class="s-dot" cx="200" cy="58" r="5"/><circle class="s-dot" cx="260" cy="70" r="5"/><circle class="s-dot" cx="230" cy="88" r="5"/>
+                <path class="s-line" d="M200 58l60 12-30 18z"/></g>
+            </svg>
+          </div>
+          <div class="svc-body">
+            <div><h3>GIS Software Licensing</h3><p>Authorized access to industry-leading GIS platforms for mapping, spatial analysis, remote sensing and visualization — matched to what your projects actually need.</p><a class="svc-more" href="services/gis-software-licensing.html">Explore this service <span>→</span></a></div>
+            <ul>
+              <li>Licensing for established, industry-standard platforms</li>
+              <li>Flexible options for individuals, teams and organizations</li>
+              <li>Easy renewals, upgrades and technical support</li>
+              <li>Training and onboarding support included</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 04 Survey -->
+        <div class="svc-panel" role="tabpanel" id="svc-4" aria-labelledby="tab-4" hidden>
+          <div class="svc-visual"><span class="tag">SERVICE / 04</span>
+            <svg viewBox="0 0 460 220" aria-hidden="true">
+              <path class="s-line" d="M240 110c0-40 60-60 110-50s80 40 60 70-90 40-130 30-40-20-40-50z" opacity=".35"/>
+              <path class="s-line" d="M265 110c0-26 40-40 80-32s56 26 42 46-62 26-92 20-30-14-30-34z" opacity=".55"/>
+              <path class="s-line" d="M292 108c0-14 22-22 46-18s32 14 24 26-36 16-54 12-16-8-16-20z" opacity=".8"/>
+              <circle class="s-dot" cx="330" cy="104" r="5"/>
+              <path class="s-cu s-dash" d="M110 92L330 104"/>
+              <path class="s-line" d="M110 100l-30 100M110 100v100M110 100l30 100"/>
+              <rect class="s-fill" x="94" y="74" width="32" height="26" rx="4"/>
+              <circle cx="110" cy="87" r="6" fill="#c08552"/>
+              <text x="300" y="186" fill="#8fb8b2" font-family="JetBrains Mono" font-size="11">Δh 0.012 m</text>
+            </svg>
+          </div>
+          <div class="svc-body">
+            <div><h3>Topographic Survey &amp; Mapping</h3><p>High-accuracy surveying and mapping for infrastructure, planning and development — including earthwork cut-and-fill analysis, mobile mapping and utility GIS.</p><a class="svc-more" href="services/topographic-survey-mapping.html">Explore this service <span>→</span></a></div>
+            <ul>
+              <li>Land, boundary and engineering surveys</li>
+              <li>Drone photogrammetry and LiDAR-based terrain models</li>
+              <li>Deliverables ready for design and planning teams</li>
+              <li>Compliant with standard survey accuracy benchmarks</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 05 Flood -->
+        <div class="svc-panel" role="tabpanel" id="svc-5" aria-labelledby="tab-5" hidden>
+          <div class="svc-visual"><span class="tag">SERVICE / 05</span>
+            <svg viewBox="0 0 460 220" aria-hidden="true">
+              <defs><clipPath id="floodClip"><rect x="0" y="0" width="460" height="220"/></clipPath></defs>
+              <g clip-path="url(#floodClip)">
+                <path class="s-line" d="M20 110h420" stroke-dasharray="4 6" opacity=".5"/>
+                <text x="24" y="102" fill="#c08552" font-family="JetBrains Mono" font-size="10">100-YR FLOOD LEVEL</text>
+                <rect class="s-fill" x="150" y="120" width="34" height="60"/><rect class="s-fill" x="194" y="100" width="26" height="80"/><rect class="s-fill" x="300" y="130" width="40" height="50"/>
+                <path d="M0 220V170c60-30 100 10 150 10h190c40 0 80-40 120-10v50z" fill="#14393a" stroke="#8fb8b2" stroke-width="1.2"/>
+                <g class="s-rise"><path class="s-wave" d="M-20 196q25-10 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0v40H-20z" fill="#c08552" fill-opacity=".35" stroke="#c08552" stroke-width="2"/></g>
+              </g>
+            </svg>
+          </div>
+          <div class="svc-body">
+            <div><h3>Flood Risk Assessment</h3><p>Scientific risk assessment and modelling that helps governments, businesses and communities build resilience — from drainage and flow-path analysis to industrial asset exposure mapping.</p><a class="svc-more" href="services/flood-risk-assessment.html">Explore this service <span>→</span></a></div>
+            <ul>
+              <li>Hydrological and hydraulic modelling of catchments</li>
+              <li>Hazard and exposure mapping for planning decisions</li>
+              <li>Supports early-warning and resilience planning</li>
+              <li>Reports formatted for policy and funding submissions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MISSION & VISION ============================== -->
+<section class="section mv" id="mission">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Mission &amp; vision</span>
+      <h2 class="h2">What we work <em>toward.</em></h2>
+    </div>
+    <div class="mv-grid">
+      <article class="mv-card reveal">
+        <h3>// MISSION</h3>
+        <p>To empower organizations with cutting-edge geospatial and environmental solutions that bridge the gap between raw data and real-world impact.</p>
+        <span class="big" aria-hidden="true">M</span>
+      </article>
+      <article class="mv-card reveal" style="--d:.15s">
+        <h3>// VISION</h3>
+        <p>A future where communities, businesses and governments make decisions backed by accurate, timely and location-aware intelligence.</p>
+        <span class="big" aria-hidden="true">V</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== INDUSTRIES ============================== -->
+<section class="section" id="industries">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Industries we support</span>
+      <h2 class="h2">Where location <em>changes the answer.</em></h2>
+    </div>
+    <div class="ind-grid">
+      <article class="ind reveal"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><div><h3>Power Plants</h3><p>Flood exposure &amp; site resilience</p></div></article>
+      <article class="ind reveal" style="--d:.06s"><svg viewBox="0 0 24 24"><path d="M3 21V10l6 4V10l6 4V4h6v17z"/></svg><div><h3>Manufacturing</h3><p>Asset monitoring &amp; risk mapping</p></div></article>
+      <article class="ind reveal" style="--d:.12s"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-6 8 6v10M9 20v-6h6v6"/></svg><div><h3>Infrastructure</h3><p>Survey, utility GIS &amp; planning</p></div></article>
+      <article class="ind reveal" style="--d:.18s"><svg viewBox="0 0 24 24"><path d="M3 20l6-12 4 6 3-4 5 10z"/></svg><div><h3>Mining</h3><p>Terrain, volumes &amp; monitoring</p></div></article>
+      <article class="ind reveal"><svg viewBox="0 0 24 24"><rect x="1" y="7" width="14" height="10"/><path d="M15 10h4l3 3v4h-7M5.5 19.5a1.5 1.5 0 100-.01M18.5 19.5a1.5 1.5 0 100-.01"/></svg><div><h3>Logistics</h3><p>Route &amp; facility exposure</p></div></article>
+      <article class="ind reveal" style="--d:.06s"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 7 8 4 3 4c0 5 4 8 9 8zM12 14c0-4 3-7 9-7 0 5-4 7-9 7z"/></svg><div><h3>Agriculture</h3><p>Crop health, soil &amp; water</p></div></article>
+      <article class="ind reveal" style="--d:.12s"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7h5v14M14 21V3h5v18M7 10h1M7 14h1M16 7h1M16 11h1M16 15h1"/></svg><div><h3>Urban &amp; Government</h3><p>Planning, drainage &amp; smart cities</p></div></article>
+      <article class="ind reveal" style="--d:.18s"><svg viewBox="0 0 24 24"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M12 3v5"/></svg><div><h3>Disaster &amp; Climate</h3><p>Flood, cyclone &amp; impact mapping</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- @demo -->
+<section class="section dark demo" id="flood-demo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Interactive demo</span><h2 class="h2">Raise the water. <em>See the risk.</em></h2></div>
+      <p class="lede">Drag the slider to raise the river. Water spreads only where the terrain lets it, and each asset updates as the flood reaches it.</p>
+    </div>
+    <div class="demo-grid reveal">
+      <div class="demo-map" id="floodMap">
+        <canvas id="floodCanvas" aria-label="Simulated terrain map with a river and five assets" role="img"></canvas>
+        <div class="demo-assets" id="floodAssets"></div>
+        <span class="demo-legend"><i class="w"></i>Flooded <i class="r"></i>At risk <i class="s"></i>Safe</span>
+      </div>
+      <div class="demo-panel">
+        <div class="demo-level">
+          <small>WATER LEVEL ABOVE NORMAL</small>
+          <b><span id="floodLevelOut">0.0</span> m</b>
+        </div>
+        <input type="range" id="floodLevel" min="0" max="6" step="0.1" value="0" aria-label="Water level above normal, in metres">
+        <div class="demo-presets" role="group" aria-label="Scenario presets">
+          <button data-level="0">Normal</button><button data-level="1.5">Minor</button><button data-level="3">Moderate</button><button data-level="5">Severe</button>
+        </div>
+        <button class="btn btn-primary demo-play" id="floodPlay" type="button">▶ Simulate rising water</button>
+        <div class="demo-stats">
+          <div><b id="floodArea">0%</b><span>Land inundated</span></div>
+          <div><b id="floodHit">0 / 5</b><span>Assets flooded</span></div>
+        </div>
+        <ul class="demo-list" id="floodList"></ul>
+        <p class="demo-note">// Illustrative simulation on synthetic terrain — not a hydraulic model of a real site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /@demo -->
+
+<!-- ============================== WHY ============================== -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <div class="why-top reveal">
+      <div>
+        <span class="eyebrow">Why TerraINT</span>
+        <h2 class="h2">Technology, geospatial intelligence <em>and domain expertise.</em></h2>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><span class="no">01</span><h3>Technology-driven</h3><p>Leveraging current technologies to solve real-world challenges.</p></div>
+      <div class="why-item reveal" style="--d:.08s"><span class="no">02</span><h3>Geospatial intelligence</h3><p>Turning complex spatial data into meaningful insight.</p></div>
+      <div class="why-item reveal" style="--d:.16s"><span class="no">03</span><h3>Domain expertise</h3><p>Deep domain knowledge behind every customized solution.</p></div>
+      <div class="why-item reveal" style="--d:.24s"><span class="no">04</span><h3>Impact-focused</h3><p>Empowering better decisions for a sustainable tomorrow.</p></div>
+    </div>
+    <p class="why-tag reveal">Complex problems, <em>smart solutions.</em></p>
+  </div>
+</section>
+
+<!-- @insights -->
+<section class="section" id="insights">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><span class="eyebrow">Insights</span><h2 class="h2">Latest from <em>TerraINT.</em></h2></div>
+      <a class="svc-more" style="color:var(--teal-600)" href="insights.html">All articles <span>→</span></a></div>
+    <div class="post-grid three">
+      <a class="post reveal" href="insights/flood-risk-assessment-for-industrial-facilities.html" data-cat="flood">
+        <div class="post-cover"><svg class="cover" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="240" fill="url(#cg200)"/><defs><linearGradient id="cg200" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f4b4c"/><stop offset="1" stop-color="#0d2b2c"/></linearGradient></defs><ellipse cx="228" cy="105" rx="28" ry="19" transform="rotate(18 228 105)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="228" cy="105" rx="54" ry="37" transform="rotate(-8 228 105)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="228" cy="105" rx="83" ry="54" transform="rotate(-12 228 105)" fill="none" stroke="#c08552" stroke-opacity="0.55" stroke-width="1.4"/><ellipse cx="228" cy="105" rx="106" ry="71" transform="rotate(4 228 105)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="228" cy="105" rx="133" ry="92" transform="rotate(1 228 105)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="228" cy="105" rx="159" ry="105" transform="rotate(13 228 105)" fill="none" stroke="#c08552" stroke-opacity="0.55" stroke-width="1.4"/><ellipse cx="228" cy="105" rx="187" ry="121" transform="rotate(-3 228 105)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="228" cy="105" rx="217" ry="138" transform="rotate(-14 228 105)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><path d="M0 190q25-10 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0v60H0z" fill="#c08552" fill-opacity=".3" stroke="#c08552" stroke-width="2"/><path d="M0 210q25-10 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0" fill="none" stroke="#e0b68f" stroke-opacity=".5" stroke-width="1.5"/></svg><span class="post-cat">Flood & Climate</span></div>
+        <div class="post-body">
+          <span class="post-meta">Oct 2026 · 2 min read</span>
+          <h3 class="post-title">Is your facility ready for an unexpected flood?</h3>
+          <p>Flooding can halt operations, damage critical assets and break supply chains. Here is how a geospatial flood risk assessment shows exposure before the water does.</p>
+          <span class="svc-more">Read article <span>→</span></span>
+        </div>
+      </a>
+      <a class="post reveal" href="insights/iot-sensors-for-real-time-water-hydrology.html" data-cat="iot">
+        <div class="post-cover"><svg class="cover" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="240" fill="url(#cg201)"/><defs><linearGradient id="cg201" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f4b4c"/><stop offset="1" stop-color="#0d2b2c"/></linearGradient></defs><ellipse cx="110" cy="116" rx="36" ry="19" transform="rotate(-13 110 116)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="110" cy="116" rx="57" ry="40" transform="rotate(-24 110 116)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="110" cy="116" rx="83" ry="58" transform="rotate(4 110 116)" fill="none" stroke="#c08552" stroke-opacity="0.55" stroke-width="1.4"/><ellipse cx="110" cy="116" rx="111" ry="74" transform="rotate(1 110 116)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="110" cy="116" rx="138" ry="86" transform="rotate(-24 110 116)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="110" cy="116" rx="159" ry="105" transform="rotate(-9 110 116)" fill="none" stroke="#c08552" stroke-opacity="0.55" stroke-width="1.4"/><ellipse cx="110" cy="116" rx="192" ry="126" transform="rotate(0 110 116)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="110" cy="116" rx="210" ry="141" transform="rotate(-16 110 116)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><path d="M300 60h40v50h30M300 60v-20M340 110v40" fill="none" stroke="#c08552" stroke-width="1.6"/><circle cx="300" cy="40" r="5" fill="#c08552"/><circle cx="370" cy="110" r="5" fill="#c08552"/><circle cx="340" cy="150" r="5" fill="#c08552"/><path d="M318 30a26 26 0 010 36M330 20a42 42 0 010 56" fill="none" stroke="#e0b68f" stroke-width="1.6"/></svg><span class="post-cat">IoT Sensing</span></div>
+        <div class="post-body">
+          <span class="post-meta">Oct 2026 · 2 min read</span>
+          <h3 class="post-title">Turning water data into real-time intelligence</h3>
+          <p>River levels, rainfall and groundwater change constantly. Connected sensors make that change visible as it happens — and GIS shows where it matters.</p>
+          <span class="svc-more">Read article <span>→</span></span>
+        </div>
+      </a>
+      <a class="post reveal" href="insights/satellite-products-earth-observation-to-intelligence.html" data-cat="satellite">
+        <div class="post-cover"><svg class="cover" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="240" fill="url(#cg202)"/><defs><linearGradient id="cg202" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f4b4c"/><stop offset="1" stop-color="#0d2b2c"/></linearGradient></defs><ellipse cx="215" cy="138" rx="32" ry="18" transform="rotate(12 215 138)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="215" cy="138" rx="56" ry="39" transform="rotate(-15 215 138)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="215" cy="138" rx="81" ry="52" transform="rotate(-22 215 138)" fill="none" stroke="#c08552" stroke-opacity="0.55" stroke-width="1.4"/><ellipse cx="215" cy="138" rx="107" ry="72" transform="rotate(17 215 138)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="215" cy="138" rx="134" ry="89" transform="rotate(16 215 138)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="215" cy="138" rx="165" ry="106" transform="rotate(-1 215 138)" fill="none" stroke="#c08552" stroke-opacity="0.55" stroke-width="1.4"/><ellipse cx="215" cy="138" rx="187" ry="125" transform="rotate(-9 215 138)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="215" cy="138" rx="217" ry="142" transform="rotate(-11 215 138)" fill="none" stroke="#8fb8b2" stroke-opacity="0.22" stroke-width="1"/><ellipse cx="200" cy="120" rx="190" ry="60" fill="none" stroke="#8fb8b2" stroke-dasharray="4 6" stroke-opacity=".6"/><g transform="translate(330 78) rotate(-12)"><rect x="-7" y="-7" width="14" height="14" fill="#c08552"/><rect x="-30" y="-4" width="20" height="8" fill="#2e6663" stroke="#8fb8b2"/><rect x="10" y="-4" width="20" height="8" fill="#2e6663" stroke="#8fb8b2"/></g><path d="M330 86l-40 110h80z" fill="#c08552" fill-opacity=".12"/></svg><span class="post-cat">Satellite & EO</span></div>
+        <div class="post-body">
+          <span class="post-meta">Oct 2026 · 2 min read</span>
+          <h3 class="post-title">From pixels to decisions: satellite-based products explained</h3>
+          <p>Optical, multispectral and SAR imagery each answer different questions. A short guide to what satellite products can deliver and where they help.</p>
+          <span class="svc-more">Read article <span>→</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /@insights -->
+
+<!-- ============================== CONTACT CTA ============================== -->
+<section class="section cta" id="contact">
+  <canvas id="ctaTerrain" aria-hidden="true"></canvas>
+  <div class="wrap reveal">
+    <span class="eyebrow">Get in touch</span>
+    <h2>Let's map what <em>matters</em> to you.</h2>
+    <p class="lede">Tell us about your site, catchment or project. We'll come back with how sensing, imagery and analysis can answer your question.</p>
+    <div class="cta-mails">
+      <a class="btn btn-primary" href="mailto:sales@terraintsystems.com">sales@terraintsystems.com
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="contact.html">Send an enquiry</a>
+    </div>
+    <p class="cta-loc">◆ PATEL NAGAR, NEW DELHI 110064 · INDIA</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="assets/logo-84.webp" alt="" width="42" height="42"><span class="brand-text"><b>Terra<span>INT</span></b><small>SYSTEMS PVT. LTD.</small></span></a>
+        <p>Terrain intelligence and geospatial consultancy — turning data into decisions.</p>
+        <ul style="margin-top:16px">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="foot-h">SERVICES</h2>
+        <ul>
+          <li><a href="services/iot-sensor-solutions.html">IoT Sensor-Based Solutions</a></li>
+          <li><a href="services/satellite-products.html">Satellite-Based Products</a></li>
+          <li><a href="services/gis-software-licensing.html">GIS Software Licensing</a></li>
+          <li><a href="services/topographic-survey-mapping.html">Topographic Survey & Mapping</a></li>
+          <li><a href="services/flood-risk-assessment.html">Flood Risk Assessment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="foot-h">CONNECT</h2>
+        <ul>
+          <li><a href="mailto:sales@terraintsystems.com">sales@terraintsystems.com</a></li>
+          <li><a href="mailto:info@terraintsystems.com">info@terraintsystems.com</a></li>
+          <li><a href="https://www.linkedin.com/company/terraint-systems-pvt-ltd/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li>Patel Nagar, New Delhi, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="year">2026</span> TerraINT Systems Pvt. Ltd. All rights reserved.</span>
+      <span>From data to intelligence. From intelligence to action.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js?v=7d72b003"></script>
+</body>
+</html>
