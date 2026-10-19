@@ -26,6 +26,10 @@ ADDRESS = "Janakpuri Road, Patel Nagar, New Delhi 110064, India"
 # Provisional map pin — replace with the exact office coordinates.
 MAP_LAT, MAP_LON = 28.6406, 77.1086
 
+# Where the contact form posts. "" = open the visitor's email app pre-filled (works anywhere).
+# Vercel: paste a form-service URL, e.g. "https://formspree.io/f/abcdwxyz".  Netlify: use "/".
+FORM_ENDPOINT = ""
+
 # Production address of the site (used for canonical URLs, sitemap, social cards).
 BASE_URL = "https://terraintsystems.com/"
 OG_IMAGE = BASE_URL + "assets/og-image.png"
@@ -507,10 +511,10 @@ def build_contact():
     <div class="form-card reveal">
       <h2>Send an enquiry</h2>
       <p>Fields marked optional can be skipped. Everything else helps us reply with something useful.</p>
-      <!-- Submissions go to Netlify Forms (form name "contact"); set email notifications in the
-           Netlify dashboard. Elsewhere, data-endpoint can be any form service URL; empty = email fallback. -->
+      <!-- data-endpoint comes from FORM_ENDPOINT in tools/build.py; the Netlify attributes are
+           ignored by other hosts. -->
       <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="_gotcha"
-            data-endpoint="/" data-mailto="{SALES}" novalidate>
+            data-endpoint="{FORM_ENDPOINT}" data-mailto="{SALES}" novalidate>
         <input type="hidden" name="form-name" value="contact">
         <div class="fields">
           <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required><span class="err">Please enter your name.</span></div>
